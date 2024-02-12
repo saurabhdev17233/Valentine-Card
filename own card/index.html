@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Day Card</title>
+
+</head>
+<body>
+<div id="container">
+<div class="book">
+<div class="cover">
+<div class="notes">Happy Valentine's Day!</div>
+<div id="heart"></div>
+</div>
+</div>
+<script>
+document.querySelector('.book').addEventListener('mouseover', function() {
+  document.querySelector('.heart').style.animationDuration = '0.5s';
+});
+document.querySelector('.book').addEventListener('mouseout', function() {
+  document.querySelector('.heart').style.animationDuration = '1s';
+});
+</script>
+</body>
+</html>
